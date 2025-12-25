@@ -28,6 +28,7 @@ body {
     width: 130px;
     align-items: center;
     padding-left: 70px;
+    padding-top: 5px;
 }
 
 .header {
@@ -232,6 +233,13 @@ body {
     padding-top: 30px;
 }
 
+.section1 {
+
+    display: flex;
+    padding-left: 70px;
+    flex-direction: column;
+}
+
 .salat {
     display: flex;
     padding-left: 70px;
@@ -244,20 +252,90 @@ body {
 
 .uhr {
     display: flex;
-    height: 7px;
-    width: 7px;
-    margin: 0;
-    padding-left: 70px;
-    padding-top: 15px;
+    height: 6px;
+    width: 6px;
+    margin-right: 3px;
 }
 
 .uhr_kasten {
     display: flex;
-    
+    align-items: center;
+    justify-content: start;
+    margin-left: 70px;
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+.text_kasten {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 6px;
+    margin: 0;
 
 }
 
+.hirn {
+    display: flex;
+    height: 6px;
+    width: 6px;
+    margin-right: 3px;
+}
 
+.hirn_kasten {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+.datum {
+    display: flex;
+    height: 6px;
+    width: 6px;
+    margin-right: 5px;
+}
+
+.datum_kasten {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.reihenfolge_kasten {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+
+
+}
 
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
