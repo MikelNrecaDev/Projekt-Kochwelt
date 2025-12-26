@@ -225,6 +225,8 @@ body {
     margin-bottom: 5px;
 }
 
+/*^^^^^^^^^^^^^^^^Rezept Seite^^^^^^^^^^^^^^^^*/
+
 .titel_rezept {
     display: flex;
     padding-left: 70px;
@@ -252,8 +254,9 @@ body {
 
 .uhr {
     display: flex;
-    height: 6px;
+    height: 5px;
     width: 6px;
+    padding-bottom: 1px;
     margin-right: 3px;
 }
 
@@ -283,8 +286,9 @@ body {
 
 .hirn {
     display: flex;
-    height: 6px;
+    height: 5px;
     width: 6px;
+    padding-bottom: 1px;
     margin-right: 3px;
 }
 
@@ -306,8 +310,10 @@ body {
 
 .datum {
     display: flex;
-    height: 6px;
-    width: 6px;
+    height: 5px;
+    width: 5px;
+    padding-top: 1px;
+    align-items: center;
     margin-right: 5px;
 }
 
@@ -332,10 +338,101 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
+}
 
+.hr_linie {
+    width: 600px;
+    height: 1px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*^^^^^^^^^^^^^^^^Rezept Seite^^^^^^^^^^^^^^^^*/
+
+.anmeldeformular {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(219, 219, 219);
+}
+
+.h2_kontakt {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
 
 
 }
+
+.titel_feld {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 8px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-inline-start: 0;
+}
+
+.textfeld {
+
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    border-style: hidden;
+    width: 192px;
+}
+
+.textfeld_gross {
+    display: flex;
+    height: 100px;
+    border-radius: 4px;
+    border-style: hidden;
+    width: 192px;
+}
+
+.senden {
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 56px;
+    padding-block: 3px;
+    font-size: 7px;
+    background-color: #008000;
+    color: white;
+    border-style: hidden;
+    height: 15px;
+    width: 80px;
+
+}
+
+.logo_und_socialmedia {
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 70px;
+
+}
+
+
+
+
 
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
