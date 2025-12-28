@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="body">
@@ -20,33 +21,48 @@
             <a class="nav_link" href="impressum.html">Impressum</a>
         </nav>
     </header>
-
-    <body>
-        <section>
-            <div class="anmeldeformular">
-                <p class="h2_kontakt">Kontaktieren Sie Uns</p>
-                    <ul class="titel_feld">Dein Name:</ul>
-                    <input class="textfeld">
-                    <ul class="titel_feld">Deine E-Mail:</ul>
-                    <input class="textfeld">
-                    <ul class="titel_feld">Deine Nachricht:</ul>
-                    <input class="textfeld_gross">
-                    <form>
-                       <label>
-                        
-
-                       </label> 
-                <button class="senden">Abschicken</button>
+    <section class="anmeldung">
+        <div class="anmeldeformular">
+            <p class="h2_kontakt">Kontaktieren Sie Uns</p>
+            <form onsubmit="sendMail(event)">
+                <label class="titel_feld">
+                    Dein Name:
+                    <input class="textfeld" type="text" name="Dein Name">
+                </label>
+                <label class="titel_feld">
+                    Deine E-Mail:
+                    <input class="textfeld" type="email" name="E-Mail">
+                </label>
+                <label class="titel_feld">
+                    Deine Nachricht:
+                    <textarea class="textfeld_gross" name="Nachricht"></textarea>
+                </label>
+                <form>
+                    <button class="senden" type="submit">Abschicken</button>
                 </form>
-            </div>
-        </section>
-        <section class="logo_und_socialmedia">
-
-
-
-
-        </section>
-
-    </body>
+        </div>
+        </form>
+    </section>
+    <footer class="logo_und_socialmedia">
+        <img src="./img/logoweiss.png" class="logo_kochwelt">
+        <div class="impressum_mail_copyright_container">
+            <a class="impressum_footer" href="impressum.html">Impressum</a>
+            <address class="mailLink_container">
+                <p class="copyright">&copy Copyright 2025 Kochwelt-2470</p>
+                <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+                <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+                <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+        </address>
+        </div>
+        <div class="social_media">
+            <a href="https://www.facebook.com/?locale=de_DE">
+                <img src="./img/facebook_logo.png" class="facebook_logo">
+            </a>
+            <a href="https://instagram.com/">
+                <img src="./img/instagrram_logo.png" class="instagram_logo">
+            </a>
+        </div>
+    </footer>
+</body>
 
 </html>
