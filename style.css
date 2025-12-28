@@ -233,7 +233,6 @@ body {
 
 .titel_rezept {
     display: flex;
-    padding-left: 70px;
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
     padding-top: 30px;
@@ -242,24 +241,23 @@ body {
 .section1 {
 
     display: flex;
-    padding-left: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
     flex-direction: column;
 }
 
 .salat {
     display: flex;
-    padding-left: 70px;
-    padding-right: 70px;
     align-items: center;
-    width: 150px;
+    width: 100%;
     height: 120px;
     border-radius: 5px;
 }
 
 .uhr {
     display: flex;
-    height: 5px;
-    width: 6px;
+    height: 7px;
+    width: 7px;
     padding-bottom: 1px;
     margin-right: 3px;
 }
@@ -268,12 +266,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-left: 70px;
-    margin-top: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     width: fit-content;
     height: fit-content;
     border-radius: 3px;
@@ -283,15 +280,15 @@ body {
 .text_kasten {
     display: flex;
     font-family: "Raleway", sans-serif;
-    font-size: 6px;
+    font-size: 8px;
     margin: 0;
 
 }
 
 .hirn {
     display: flex;
-    height: 5px;
-    width: 6px;
+    height: 7px;
+    width: 7px;
     padding-bottom: 1px;
     margin-right: 3px;
 }
@@ -301,11 +298,11 @@ body {
     align-items: center;
     justify-content: start;
     margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     width: fit-content;
     height: fit-content;
     border-radius: 3px;
@@ -314,8 +311,8 @@ body {
 
 .datum {
     display: flex;
-    height: 5px;
-    width: 5px;
+    height: 7px;
+    width: 7px;
     padding-top: 1px;
     align-items: center;
     margin-right: 5px;
@@ -326,11 +323,11 @@ body {
     align-items: center;
     justify-content: start;
     margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     width: fit-content;
     height: fit-content;
     border-radius: 3px;
@@ -345,13 +342,166 @@ body {
 }
 
 .hr_linie {
-    width: 600px;
+    display: flex;
     height: 1px;
-    margin-left: 70px;
-    margin-right: 70px;
+    padding-right: 0;
     margin-top: 30px;
     background-color: rgb(240, 240, 240);
 }
+
+.zutaten {
+    display: flex;
+    margin-left: 70px;
+}
+
+.portionen_berechnung {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text_berechnung {
+    display: flex;
+    font-style: "Raleway", sans serif;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-right: 8px;
+    border-style: 1px;
+
+}
+
+.anzahl_portionen {
+    display: flex;
+    margin-top: 5px;
+    width: 110px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+    border-style: 1px;
+    border-color: rgb(240, 240, 240);
+}
+
+.portionen {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    background-color: #008000;
+    color: white;
+    border-color: transparent;
+    margin-top: 5px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    height: 21px;
+    width: 100px;
+}
+
+.rezept_liste {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.einzelne_zutaten1 {
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(240, 240, 240);
+    font-size: 10px;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+
+}
+
+.einzelne_zutaten2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.zubereitung {
+    margin-left: 70px;
+}
+
+.zubereitung_titel {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.zubereitung_text {
+    font-family: "Raleway", sans-serif;
+    font-size: 9px;
+}
+
+.uhr_kasten_section3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+
+
+}
+
+.rezept_erstellt {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    padding-top: 10px;
+    flex-direction: row;
+}
+
+.rezept_ersteller {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+}
+
+.ersteller_bild {
+    width: 50px;
+    height: 50px;
+}
+
+.name_ersteller {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    align-items: center;
+    text-align: center;
+    
+    padding-left: 25px;
+}
+
+.footer_rezept {
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 150px;
+    margin-top: 60px;
+
+
+
+}
+
 
 /*^^^^^^^^^^^^^^^^Rezept Seite^^^^^^^^^^^^^^^^*/
 
@@ -513,7 +663,6 @@ body {
     text-decoration: none;
 }
 
-
 /*^^^^^^^^^^^^^^^^Kontakt Seite^^^^^^^^^^^^^^^^*/
 
 
@@ -521,7 +670,7 @@ body {
 /*****************Impressum*********************/
 
 .impressum {
-    font-family: "Raleway", "sans serif";
+    font-family: "Raleway", sans serif;
 }
 
 /*^^^^^^^^^^^^^^^^Impressum^^^^^^^^^^^^^^^^^^^^*/
@@ -533,7 +682,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
-    font-style:"Raleway", sans-serif;
+    font-style: "Raleway", sans serif;
     font-size: 30px;
 }
 
