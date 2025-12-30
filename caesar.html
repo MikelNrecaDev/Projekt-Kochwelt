@@ -13,7 +13,6 @@
     <header class="header">
         <div class="kochlogo">
             <img src="./img/logo.png" class="kochwelt_logo">
-            <script src="./script.js"></script>
         </div>
         <nav class="nav">
             <a class="nav_link" href="index.html">Start</a>
@@ -44,26 +43,26 @@
     <section2 class="zutaten">
         <form class="portionen_berechnung">
             <label class="text_berechnung" for="number">Zutaten für</label>
-            <input class="anzahl_portionen" id="number" min="1" max="10" type="number">
-            <button class="portionen">Portionen</button>
+            <input class="anzahl_portionen" input type="number" id="portionenInput" value="4"  min="1" max="10" step="1" type="number">
+            <button id="portionenButton" class="portionen" button type="button" value="klick mich">Portionen</button>
         </form>
     </section2>
     <section3>
         <ul class="rezept_liste">
-            <li class="einzelne_zutaten1">0.25 EL frisches Eigelb</li>
-            <li class="einzelne_zutaten2">0.25 TL Senf</li>
-            <li class="einzelne_zutaten1">0.63 EL Zitronensaft oder Weissweinessig</li>
-            <li class="einzelne_zutaten2">0.25 TL Worcestershire-Sauce</li>
-            <li class="einzelne_zutaten1">1.25 EL Sonnenblumenöl</li>
-            <li class="einzelne_zutaten2">0.13 TL Salz</li>
-            <li class="einzelne_zutaten1">1 TL Pfeffer</li>
-            <li class="einzelne_zutaten2">1 Scheiben Toastbrot</li>
-            <li class="einzelne_zutaten1">3 Scheiben Bratspeck</li>
-            <li class="einzelne_zutaten2">100g Hänchenbrust</li>
-            <li class="einzelne_zutaten1">0.5 TL Salz</li>
-            <li class="einzelne_zutaten2">0.5 Lattich</li>
-            <li class="einzelne_zutaten1">50g Gurke</li>
-            <li class="einzelne_zutaten2">53g Sbrinz</li>
+            <li class="einzelne_zutaten1"><span id="eigelb">0.25</span>EL frisches Eigelb</li>
+            <li class="einzelne_zutaten2"><span id="senf">0.25</span>TL Senf</li>
+            <li class="einzelne_zutaten1"><span id="zitronensaft">0.63</span>EL Zitronensaft oder Weissweinessig</li>
+            <li class="einzelne_zutaten2"><span id="worcestershire">0.25</span>TL Worcestershire-Sauce</li>
+            <li class="einzelne_zutaten1"><span id="sonnenblumenoel">1.25</span>EL Sonnenblumenöl</li>
+            <li class="einzelne_zutaten2"><span id="salzoben">0.13</span>TL Salz</li>
+            <li class="einzelne_zutaten1"><span id="pfeffer">1</span>TL Pfeffer</li>
+            <li class="einzelne_zutaten2"><span id="toast">1</span> Scheiben Toastbrot</li>
+            <li class="einzelne_zutaten1"><span id="speck">3</span> Scheiben Bratspeck</li>
+            <li class="einzelne_zutaten2"><span id="haenchen">100</span>g Hänchenbrust</li>
+            <li class="einzelne_zutaten1"><span id="salzunten">0.5</span>TL Salz</li>
+            <li class="einzelne_zutaten2"><span id="lattich">0.5</span> Lattich</li>
+            <li class="einzelne_zutaten1"><span id="gurke">50</span>g Gurke</li>
+            <li class="einzelne_zutaten2"><span id="sbrinz">53</span>g Sbrinz</li>
         </ul>
     </section3>
     <section class="zubereitung">
@@ -75,7 +74,7 @@
             </div>
             <div class="uhr_kasten_section3">
                 <img src="/img/icons/clock-regular.svg" class="uhr">
-                <p class="text_kasten">Gesamtzeit ca. 15 min Minuten</p>
+                <p class="text_kasten">Gesamtzeit ca. 25 min Minuten</p>
             </div>
         </div>
         <p class="zubereitung_text">Senf, Zitronensaft und Worcestershire-Sauce in einen Messbecher geben, Öl
@@ -96,5 +95,6 @@
             </div>
     </section>
     <footer class="footer_rezept"></footer>
+    <script src="./script.js"></script>
 </body>
 </html>
