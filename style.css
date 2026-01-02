@@ -1,27 +1,32 @@
+/* start of style of classes used in all html files*/
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2') format('woff2'),
-        url('fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2') format('woff2'),
-        url('fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2') format('woff2'),
-        url('fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2') format('woff2'),
-        url('fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2') format('woff2'),
-        url('fonts/1Ptug8zYS_SKggPNyC0ITw.woff2') format('woff2'),
-        url('fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2') format('woff2'),
-        url('fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2') format('woff2'),
-        url('fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2') format('woff2'),
-        url('fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2') format('woff2');
+    src: url('./fonts/300/Raleway-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/400/Raleway-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    /* Verhindert FOIT, verbessert Ladezeit */
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/700/Raleway-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 /*^^^^^^^^^^^^^^^^Index^^^^^^^^^^^^^^^^*/
 
 body {
     margin: 0;
-
-
 }
 
 
@@ -68,7 +73,7 @@ body {
 
 .Rezeptvorschlag {
     display: flex;
-    width: 200px;
+    width: 500px;
     height: 140px;
     border-radius: 3px;
 
@@ -149,7 +154,6 @@ body {
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
     padding-top: 15px;
     padding-bottom: 7px;
     margin: 0;
@@ -226,6 +230,35 @@ body {
     height: 100px;
     margin-bottom: 5px;
 }
+
+@media (min-width: 637px) and (max-width: 1450px) {
+    .hide_button {
+        display: none;
+
+
+
+    }
+
+}
+
+
+@media (max-width: 636px) {
+    .hide_menu {
+        display: none;
+
+    }
+
+
+    .Rezeptvorschlag {
+        display: flex;
+        width: 150px;
+        height: 120px;
+        border-radius: 3px;
+    }
+
+}
+
+
 
 /*^^^^^^^^^^^^^^^^Index^^^^^^^^^^^^^^^^*/
 
@@ -364,7 +397,7 @@ body {
 
 .text_berechnung {
     display: flex;
-    font-style: "Raleway", sans serif;
+    font-style: "Raleway", sans-serif;
     font-size: 13px;
     padding-top: 5px;
     padding-right: 8px;
@@ -490,7 +523,7 @@ body {
     font-weight: lighter;
     align-items: center;
     text-align: center;
-    
+
     padding-left: 25px;
 }
 
@@ -553,7 +586,7 @@ body {
 .textfeld {
 
     display: flex;
-    font-style: "Raleway", 'sans serif';
+    font-style: "Raleway", sans-serif;
     justify-content: center;
     border-radius: 4px;
     border-color: transparent;
@@ -564,7 +597,7 @@ body {
 .textfeld_gross {
 
     display: flex;
-    font-style: 'Raleway', "sans serif";
+    font-style: 'Raleway', sans-serif;
     justify-content: center;
     border-radius: 4px;
     border-color: transparent;
@@ -684,9 +717,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
-    font-style: "Raleway", sans serif;
+    font-style: "Raleway", sans-serif;
     font-size: 30px;
 }
+
 
 /*^^^^^^^^^^^^^^^^send_email.html^^^^^^^^^^^^^^^*/
 
